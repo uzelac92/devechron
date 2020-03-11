@@ -1,0 +1,33 @@
+<section class="projekti w-100 d-flex flex-wrap my-4 justify-content-center align-items-center" >
+    <div class="textprojekti text-justify mt-auto w-50">
+      <p>Naša profesija je Vaš alat za bolju impresiju Vašim klijentima. Ukoliko Vam potreban veb dizajn od nule, ili imate već postojeći a potreban vam revamp (redizajn) ili održavanje naše usluge su Vam na raspolaganju po veoma prihvatljivoj ceni. Veb prezentacija je lice Vaše firme, koja vas predstavlja vašim klijentima. </p>
+       <p>U realizaciji Vašeg veb-sajta koristimo najsavremenije tehnologije i u skladu sa veb standardima obezbeđujemo laku dostupnost Vašeg sajta, optimizovan za veb pretraživače (Google, Yahoo, Bing), intuitivan i jednostavan za upotrebu. Praćenjem statistike biće Vam ukazan broj posetioca/korisnika/ciljne grupe Vašeg veb sajta.
+        Kontaktirajte nas ukoliko Vam potrebno: izraditi veb-sajt, prilagoditi postojeći ili dodati kreativnih ideja. Jedinstveno rešenje koje odgovara Vašim zahtevima. </p><p> Ukoliko vam potrebna vidljivost veb-sajta bilo kreiranog od nas ili već postojećeg nudimo i digitalni marketing kroz Google oglašavanje (Search, Display, YouTube, Dynamic Ads Advertising, Mobile App Ads, Remarketing), Facebook, Instagram i LinkedIn Advertising.
+      </p>
+      <small>Ukoliko želite biti unikatno prepoznatljivi na internetu (Google roboti) nudimo obradu Vaših ili tuđih sadržaja kao i njihovog smisleno prilagođavanje uz stalno testiranje. Ako već imate ideju kakav Vam je sajt potreban slobodno nas kontaktirajte za inicijalnu procenu veb-dizajn projekta, a mi ćemo Vam se javiti u najkraćem mogućem roku sa okvirnom ponudom.</small>
+    </div>
+    <div class="d-flex position-relative justify-content-center">
+      <div class="projektiwrapper d-flex flex-nowrap justify-content-center align-items-center py-5 col-12 px-0 mx-0">
+        <div class="rotholder" ng-class="nestani ? 'nestaniLevo':'pojaviSe'" ng-repeat="ad in komplet track by $index | limitTo:7" >
+          <div class="rotatable m-4">
+            <div class="rating"><span></span></div>
+            <div class="w-100 content" ng-mouseover="ad.gryscl=0" ng-mouseleave="ad.gryscl=1">
+              <div class="pozadina position-absolute h-100 w-100" ng-style="{'background-image':'url(/projekti/' + ad.lnk + ')','filter':  {0: 'grayscale(0%)', 1: 'grayscale(100%)'}[ ad.gryscl ]}" 
+              style="background-size: 100%;"></div>
+              <div class="text-right naslov"><span class="py-0 my-0">{{ad.naslov}}</dspan> <br> <small ng-bind="ad.pblc == 1 ? 'publikovan projekat' : 'demo projekat'"></small> </div>
+              <div class="dodatniopis">
+                <p class="d-block float-left my-0 text-left p-3 w-100">
+                  <b>Platforma:</b> {{ad.platforma}} <br>  
+                  <b>Tema:</b> {{ad.tema}} <br>
+                  <b>Vrsta:</b> {{ad.vrsta}} <br>
+                  <button class="mt-2 dugme" ng-click="showDemo(ad.mod)" ng-if="!ad.hasAdr" >LIVE demo</button>
+                  <button class="mt-2 dugme" ng-if="ad.hasAdr" rel="noopener" ng-click="otvori(ad.adr)">LIVE demo</button>
+                </p>
+              </div>
+            </div> 
+          </div>
+        </div>
+        <a ng-click="listajDesno()" class="btn btn-primary d-flex align-items-center justify-content-center border-0"><i class="fas fa-angle-double-right fa-2x"></i></a>
+      </div>
+    </div>
+</section>

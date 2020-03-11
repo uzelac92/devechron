@@ -1,0 +1,36 @@
+
+<section class="height-60 w-100 demoTools">
+    <div class="home">
+        <h1 class="intro-text">RESPONSIVE</h1>
+    </div>
+    <div class="wrapper d-flex justify-content-center">
+        <section class="display">
+            <div class="mobile">
+                <div class="trim">
+                    <img class="lazyload" id="mobile" data-src="/projekti/mobileImg.jpg" alt="Mobile responsive"></img>
+                </div>
+            </div>
+        
+            <div class="tablet">
+                <div class="trim">
+                    <img class="lazyload" id="tablet" data-src="/projekti/tableImg.jpg" alt="Table responsive"></img>
+                </div>
+            </div>
+            <div class="laptop">
+                <div class="trim">
+                    <img class="lazyload" id="laptop" data-src="/projekti/desktopImg.jpg" alt="Laptop responsive"></img>
+                </div>
+            </div>
+            <div class="desktop">
+                <div class="trim">
+                    <img class="lazyload" id="desktop" data-src="/projekti/macImg.jpg" alt="Desktop responsive"></img>
+                </div>
+            </div>
+        </section>
+    </div>
+</section>
+<script>
+    $(document).ready(function() {
+        $(".intro-text").lettering('words').children("span").lettering(); 
+    })
+</script>

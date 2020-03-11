@@ -1,0 +1,48 @@
+<header id="glavniMeni">
+    <div class="logo">
+      <div class="pozdrav d-block text-right">
+        <h4>DOBRO DOŠLI</h4>
+        <p>Tu smo da pomognemo u realizovanju ideja svima koji su u procesu prvih koraka ka biznis svetu, bilo to mala, srednja ili velika preduzeća, pa čak pojedinci koj su u procesu realizovanja svog biznis plana. Tu smo da vaš posao-ideju-biznis-usluge predstavite celom svetu.</p>
+        <small>Želite li platformu za rad vaše kompanije, veb-sajt za prezentovanje vaših usluga ili novosti? Kontaktirajte nas, predstavite nam ideju i prepustite nama da je realizujemo u kratkom roku.</small><br/>
+        <button class="contactbtn"  ng-click="scrollInto('kontakt')">KONTAKTIRAJTE NAS</button>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-xl navbar-light bg-white">
+        <div class="mx-auto d-lg-flex d-block flex-lg-nowrap max-width row row-eq-height">
+            <div class="d-flex align-items center justify-content-between px-5">
+              <div class="nav-item navbar--logo2"></div>
+              <button class="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation" ng-click="podmeni=!podmeni">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+            <div class="navbar-collapse text-center bg-white" id="glavni" ng-class="podmeni ? '':'collapse'">
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-2 p-lg-3 p-2 text-center">HOME</li>
+                    <li class="nav-item mx-2 p-lg-3 p-2 text-center" ng-click="scrollInto('onama');podmeni=!podmeni">O NAMA </li>
+                    <li class="nav-item mx-2 p-lg-3 p-2 text-center" ng-click="scrollInto('projekti');podmeni=!podmeni">PROJEKTI</li>
+                </ul>
+                <div class="nav-item navbar--logo"></div>
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-2 p-lg-3 p-2 text-center" ng-click="scrollInto('templates');podmeni=!podmeni">ŠABLONI</li>
+                    <li class="nav-item mx-2 p-lg-3 p-2 text-center" ng-click="scrollInto('servisi');podmeni=!podmeni">SERVISI</li>
+                    <li class="nav-item mx-2 p-lg-3 p-2 text-center" ng-click="scrollInto('kontakt');podmeni=!podmeni">KONTAKT</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- <div class="navbar d-flex justify-content-center align-items-center w-100 m-0 p-0 bg-white">
+      <ul class="d-flex justify-content-center align-items-center">
+        <li class="mx-2 p-3 text-center">HOME</li>
+        <li class="mx-2 p-3 text-center" ng-click="scrollInto('onama')">O NAMA </li>
+        <li class="mx-2 p-3 text-center" ng-click="scrollInto('projekti')">PROJEKTI</li>
+      </ul>
+      <div class="navbar--logo">
+        
+      </div>
+      <ul class="d-flex justify-content-center align-items-center">
+        <li class="mx-2 p-3 text-center" ng-click="scrollInto('templates')">ŠABLONI</li>
+        <li class="mx-2 p-3 text-center" ng-click="scrollInto('servisi')">SERVISI</li>
+        <li class="mx-2 p-3 text-center" ng-click="scrollInto('kontakt')">KONTAKT</li>
+      </ul>
+    </div> -->
+  </header>
