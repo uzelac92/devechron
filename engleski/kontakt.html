@@ -1,0 +1,25 @@
+<section class="contactsection w-100 d-block" id="kontakt">
+    <div class="naslovpozadina w-100 d-flex align-items-end justify-content-center">
+      <h4 class="m-0 d-flex text-center align-items-end">Contact us</h4>
+    </div>
+    <div class="inputholder d-flex flex-wrap justify-content-center align-items-center  m-auto">
+        <label for="ime" class="inputwrapper d-block m-2 p-1">
+          <input ng-model="poruka.ime" aria-label="Name of sender" id="ime" type="text" name="name" placeholder="First and Last Name" class="d-flex justify-content-start align-items-center m-0 p-2">
+        </label>
+        <label for="mejl" class="inputwrapper d-block m-2 p-1">
+          <input ng-model="poruka.mejl" aria-label="E-mail of sender" id="mejl" type="text" name="email" placeholder="Your e-mail" class="d-flex justify-content-start align-items-center m-0 p-2">
+        </label>
+        <label for="telefon" class="inputwrapper d-block m-2 p-1">
+          <input ng-model="poruka.telefon" aria-label="Phone of sender" id="telefon" type="text" name="phone" placeholder="Phone number" class="d-flex justify-content-start align-items-center m-0 p-2">
+        </label>
+
+        <label for="subj" class="inputwrapper d-block m-2 p-1">
+          <input ng-model="poruka.naslov" aria-label="Subject of message" id="sub" placeholder="Subject" type="text" class="d-flex justify-content-start align-items-center m-0 p-2">
+        </label>
+        <label for="poruka" class="inputwrapper d-block m-2 p-1">
+          <textarea ng-model="poruka.msg" rows="3" aria-label="Message of sender" id="poruka" type="text" placeholder="Message" class="d-flex justify-content-start align-items-start m-0 mt-3 p-2"></textarea>
+        </label>
+        
+        <button class="contactbtn"  ng-click="posaljiPoruku(poruka)">CONTACT US</button>
+    </div>
+</section>
