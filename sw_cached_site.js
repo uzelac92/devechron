@@ -1,4 +1,4 @@
-const cacheName = ['v1'];
+const cacheName = ['devechron:v2'];
 
 self.addEventListener('install', e => { });
 
